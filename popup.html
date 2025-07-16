@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ripple Toggle</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    .toggle-container { display: flex; align-items: center; }
+    .toggle-label { margin-left: 10px; }
+    input[type="checkbox"] { width: 40px; height: 20px; }
+  </style>
+</head>
+<body>
+  <div class="toggle-container">
+    <input type="checkbox" id="rippleToggle">
+    <label for="rippleToggle" class="toggle-label">Enable Ripple Effect</label>
+  </div>
+  <div style="margin-top: 20px;">
+    <label for="rippleColor">Ripple Color:</label>
+    <input type="color" id="rippleColor" value="#0096ff">
+  </div>
+  <div style="margin-top: 10px;">
+    <label for="rippleRadius">Ripple Radius:</label>
+    <input type="range" id="rippleRadius" min="20" max="200" value="60">
+    <span id="radiusValue">60</span>px
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

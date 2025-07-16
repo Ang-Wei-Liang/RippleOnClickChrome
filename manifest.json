@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Ripple Effect Mouseclick",
+  "version": "1.0",
+  "description": "Show A ripple effect when you click the mouse!",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "logo128.jpg"
+    }
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "128": "logo128.jpg"
+  }
+} 
